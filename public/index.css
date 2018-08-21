@@ -1,4 +1,5 @@
-html { height:100%; }
+html { height:100%;
+      background: rgba(50, 205, 50, 0.473); }
 form { margin-bottom: 1em; }
 
       .chat-wrapper {
@@ -78,16 +79,21 @@ form { margin-bottom: 1em; }
 
 .sidebar {
   width: 15em;
-  background-color: #222;
+  background-image: url('images/panelBG.png');
+  background-size: 15em;
   color: #bbb;
 }
 
 .sidebar .section-header {
-  margin: 1em 1.5rem;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.5em;
   text-transform: uppercase;
-  color: #777;
+  color: whitesmoke;
+  background: black;
+  padding-right: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 2em;
 }
 
 .user-list {
