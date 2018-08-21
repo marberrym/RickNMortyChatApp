@@ -2,6 +2,12 @@ console.log("Make me do things!");
 
 let $messageContainer = $('.chat-message-list');
 
+let ricksponse = ({
+  user: "Rick Sanchez",
+  timestamp: new Date(),
+  message: "Stop whining Morty, let's go..."
+})
+
 let drawMessage = ({
     user: u,
     timestamp: t,
@@ -49,6 +55,7 @@ let drawMessage = ({
       $img.addClass('icon');
       $messageRow.append($img);
       $messageRow.append($message);
+      $messageContainer.append(drawMessage(ricksponse));
       return $messageRow;
     }
     
